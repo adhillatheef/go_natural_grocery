@@ -1,16 +1,31 @@
-# go_natural_grocery
+# Go Natural Grocery - Flutter Machine Test
 
-A new Flutter project.
+A Flutter mobile application built by converting the provided Figma designs into a functional UI and integrating it with the provided REST API collection.
 
-## Getting Started
+## 📱 Project Overview
+This project demonstrates pixel-perfect UI implementation, robust API integration, clean code architecture, and efficient state management using GetX.
 
-This project is a starting point for a Flutter application.
+### Key Features Implemented
+* **Splash Screen:** Custom Twitter-style zoom animation.
+* **Authentication:** Login validation with API integration & dynamic token storage.
+* **Dynamic Home Screen:** Horizontal categories, banner carousels, and a featured product grid fetching real data.
+* **Product Lists:** Dynamic grids utilizing category slugs to fetch specific items, handling paginated nested JSON structures.
+* **Product Details:** Clean UI with fallback descriptions for API stability.
+* **Cart Logic:** Fully functional in-memory global cart state (Add, Increment, Decrement, Total calculations) reflected across the Bottom Navigation Bar.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack & Requirements
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* **Flutter Version Used:** 3.32.7
+* **State Management Used:** GetX (Chosen for minimal boilerplate, reactive state management `Obx`, and easy dependency injection for global controllers like the Cart and Auth services).
+* **Network:** Dio (For API calls, interceptors, and robust error handling).
+* **Image Caching:** `cached_network_image` (For smooth scrolling and optimized memory usage).
+
+---
+
+## 🚀 Steps to Run the Project
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/adhillatheef/go_natural_grocery
